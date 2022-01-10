@@ -87,6 +87,8 @@ function operaciones(num1, num2, num3,suma, resta, multi){
 operaciones(5,6,7);
 */
 //Area triangulo con parametros
+
+/*
 function areat(base, altura){
     var area = (base * altura)/2;
     alert ("Esta es el area del triangulo: " + area);
@@ -110,3 +112,49 @@ function areacir(radio){
 }
 
 areacir(3);
+*/
+
+//Function Prompter
+/*
+function Prompter(){
+    var respuesta = prompt("Buenos dias, cual es tu nombre? : ");
+    alert ("Es un gusto saludarte: " + respuesta);
+}
+
+Prompter();
+
+function areaCuadrado(){
+    var datoIngresado = prompt("Ingresa un numero: ");
+    var resultado = datoIngresado* datoIngresado;
+    alert("El area del cuadrado es: "+ resultado);
+}
+
+areaCuadrado();
+*/
+//funcion onclick
+function confirmacion(){
+    var pregunta = confirm("Deseas visitar google.com y buscar fotos de perritos?");
+    if(pregunta){
+        alert("Te enviare rapidamente")
+        window.location="https:www.google.com";
+    }
+    else{
+        alert("No hay problema, nos vemos luego");
+    }
+}
+
+//getElementByID
+
+function cambiarColor(nuevoColor){
+    var elem = document.getElementById("parrafo");  
+    elem.style.color=nuevoColor;
+}
+
+function accion(Tipo){
+    var elem = document.getElementById("Divbotones");
+    if(Tipo== "Ocultar"){
+    elem.style.display = 'none';
+}else{
+        elem.style.display = '';
+    }
+}
